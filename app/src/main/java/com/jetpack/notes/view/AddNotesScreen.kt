@@ -178,7 +178,10 @@ fun AddNotesScreen(
                                     noteDateCalendar.timeInMillis,
                                     pendingIntent
                                 )
-                                val timeText = SimpleDateFormat("hh:mm a", Locale.getDefault()).format(noteDateCalendar.time)
+                                val timeText =
+                                    SimpleDateFormat("hh:mm a", Locale.getDefault()).format(
+                                        noteDateCalendar.time
+                                    )
                                 Toast.makeText(
                                     context,
                                     "Reminder set for $selectedDate $timeText",
@@ -220,7 +223,9 @@ fun AddNotesScreen(
                     unfocusedContainerColor = sky1,
                     cursorColor = skyblue,
                     focusedBorderColor = skyblue,
-                    unfocusedBorderColor = skyblue
+                    unfocusedBorderColor = skyblue,
+                    focusedTextColor = Color.Black,
+                    unfocusedTextColor = Color.Black
                 )
             )
             /*
@@ -286,7 +291,12 @@ fun AddNotesScreen(
             OutlinedTextField(
                 value = selectedDate,
                 onValueChange = {},
-                label = { Text("Date") },
+                label = {
+                    Text(
+                        "Date",
+                        color = PurpleGrey40
+                    )
+                },
                 readOnly = true,
                 interactionSource = interactionSource,
                 modifier = Modifier
@@ -298,7 +308,9 @@ fun AddNotesScreen(
                     unfocusedContainerColor = sky1,
                     cursorColor = skyblue,
                     focusedBorderColor = skyblue,
-                    unfocusedBorderColor = skyblue
+                    unfocusedBorderColor = skyblue,
+                    focusedTextColor = Color.Black,
+                    unfocusedTextColor = Color.Black
                 ),
             )
 
@@ -320,7 +332,9 @@ fun AddNotesScreen(
                     unfocusedContainerColor = sky1,
                     cursorColor = skyblue,
                     focusedBorderColor = skyblue,
-                    unfocusedBorderColor = skyblue
+                    unfocusedBorderColor = skyblue,
+                    focusedTextColor = Color.Black,
+                    unfocusedTextColor = Color.Black
                 )
             )
 

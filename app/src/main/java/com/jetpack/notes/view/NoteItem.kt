@@ -1,7 +1,5 @@
 package com.jetpack.notes.view
 
-import android.R
-import android.content.res.Resources
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -15,26 +13,19 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CardElevation
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.room.util.TableInfo
 import com.jetpack.notes.model.Note
 import com.jetpack.notes.ui.theme.Pink40
-import com.jetpack.notes.ui.theme.PurpleGrey40
 import com.jetpack.notes.ui.theme.litesky
 import com.jetpack.notes.ui.theme.sky1
-import com.jetpack.notes.ui.theme.skyblue
 import com.jetpack.notes.ui.theme.yellow
 
 @Composable
